@@ -25,7 +25,7 @@ jobs:
           images: ghcr.io/${{ github.repository }}
           tags: |
             type=raw,value=latest
-            type=date,format={{date 'YYYY-MM-DD'}}
+            type=date,format=YYYY-MM-DD
 
       # Step 3: Set up Docker Buildx
       - name: Set up Docker Buildx
